@@ -1,0 +1,83 @@
+---
+title: 'Contact | Code Stitch Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'contact/'
+eleventyNavigation:
+    key: Contact Us
+    order: 600
+    hideOnDesktop: true
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/contact.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Say hello to Allie</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="\assets\images\Interior page - 712 (1).jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="\assets\images\Interior page - 712 (1).jpg">
+        <img loading="lazy" decoding="async" src="\assets\images\Interior page - 712 (1).jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+
+    <section id="cs-contact">
+        <div class="cs-container">
+            <form id="cs-form" name="Contact Form" method="post">
+                <div class="cs-content">
+                    <span class="cs-topper">Contact</span>
+                    <h2 class="cs-title">Get in Touch</h2>
+                    <p class="cs-text">
+                        If you have an interest in robots or Japan send an email and introduce yourself! Love to connect with you! 
+                    </p>
+                </div>
+                <label>
+                    Name
+                    <input required type="text" id="name" name="name" placeholder="e.g. Johny/Jane Doe">
+                </label>
+                <label>
+                    Email
+                    <input required type="text" id="email" name="email" placeholder="e.g. name@company.com">
+                </label>
+                <label>
+                    Phone
+                    <input required type="text" id="phone" name="phone" placeholder="e.g. +1 (206) 987-6543">
+                </label>
+                <label>
+                    How Did You Find Us
+                    <input type="text" id="find" name="find-us" placeholder="Social Media, family, friends...">
+                </label>
+                <label class="cs-label-message">
+                    Message
+                    <textarea required name="Message" id="message" placeholder="Hello, I am Interested in..."></textarea>
+                </label>
+                <button class="cs-button-solid" type="submit">Send Message Now</button>
+            </form>
+            <div class="cs-right-section">
+                <!-- Background Image-->
+                <picture class="cs-bg-picture">
+                    <source media="(min-width: 601px)" srcset="\assets\images\Frame 34.png">
+                    <img aria-hidden="true" decoding="async" src="\assets\images\Frame 34.png" alt="building" loading="lazy" width="2500" height="1667">
+                </picture>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}
